@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+  max-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial;
+  max-width: 500px;
+}
+
+.key {
+  background-color: #d3d6da;
+  width: 2.7rem;
+  height: 3.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  margin:0.2rem;
+  line-height: 3.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.bigKey {
+  width:4.2rem;
+}
+
+.keyboard{
+  height: 200px;
+  padding-bottom: 1vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.boardRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile{
+  width: 3.7rem;
+  height: 3.7rem;
+  border : 2px  #d8d8d8 solid;
+  line-height: 3.7rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin:0.2rem;
+}
+
+.green {
+  border-color : #6aaa64;
+  background-color: #6aaa64;
+  color: white;
+}
+
+.yellow {
+  border-color : #c9b458;
+  background-color: #c9b458;
+  color: white;
+}
+
+.grey {
+  border-color : #86888a;
+  background-color: #86888a;
+  color: white;
+}
+
+.header {
+  padding-top: 0.6vh;
+  border-bottom: 1px solid #d3d6da;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  width: 100%;
+}
