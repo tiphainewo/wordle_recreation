@@ -1,7 +1,7 @@
 import './App.css';
 import Board from './components/Board';
 import Keyboard from './components/Keyboard';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import { wordsList } from './const/words'
 
@@ -67,7 +67,7 @@ function App() {
     setCurrentWord(tempWord)
   }
 
-  //Clear current word
+  //Remove last letter of the current word
   const onDelete = () => {
     let tempWord = currentWord.slice(0, -1)
     setCurrentWord(tempWord)
@@ -75,13 +75,14 @@ function App() {
 
   useEffect(() => {
     setRightWord(rightWord.toUpperCase())
-    console.log(rightWord)
+
     //Initialize array for the state of each letter on the keyboard
     let tempDict = letterState
     for (let letter in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']) {
       tempDict[letter] = 0;
     };
     setLetterState(tempDict)
+
   }, [])
 
   return (
