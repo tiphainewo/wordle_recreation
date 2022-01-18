@@ -14,7 +14,6 @@ function App() {
 
   //Confirm current word
   const onEnter = () => {
-    console.log(currentTry)
     if (currentWord.length < 5) {
       alert("Not enough letters")
     }
